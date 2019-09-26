@@ -1,0 +1,10 @@
+# Ignore Terraform working directories and Terraform State files.
+**/.terraform
+**/terraform.tfstate*
+**/terraform.tfvars
+!bootstrap/terraform.tfstate
+**/terraform.auto.tfvars
+**/mfa*
+
+# Ignore VSCode files
+**/.vscode
