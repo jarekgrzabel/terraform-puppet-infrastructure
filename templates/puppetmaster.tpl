@@ -24,7 +24,7 @@ class { 'puppet':
   ca_server => "${puppetmaster_host_name}",
   server_ca_allow_sans => true,
   puppetmaster => "${puppetmaster_host_name}",
-  cipher_suites => 
+  server_cipher_suites => 
   [
     "TLS_RSA_WITH_AES_256_CBC_SHA256",
     "TLS_RSA_WITH_AES_256_CBC_SHA",
