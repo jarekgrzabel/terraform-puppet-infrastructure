@@ -10,6 +10,7 @@ yum install "https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.
 yum install vim-enhanced bash-completion nc puppetserver jq awscli -y
 
 /opt/puppetlabs/bin/puppet module install theforeman-puppet
+/opt/puppetlabs/bin/puppet module install camptocamp-systemd
 /opt/puppetlabs/bin/puppet module install puppetlabs-puppetdb
 
 cat > puppet_master_install.pp <<EOF
