@@ -56,8 +56,7 @@ EOF
 
 /opt/puppetlabs/bin/puppet apply puppet_db_setup.pp
 
-
-/opt/puppetlabs/bin/puppet module install puppet-hiera
+/opt/puppetlabs/bin/puppet module install puppet-hiera --ignore-dependencies
 cat > puppet_hiera.pp <<EOF
 class { 'hiera': 
   eyaml => true,

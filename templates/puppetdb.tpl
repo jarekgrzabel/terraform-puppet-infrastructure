@@ -21,6 +21,7 @@ done
 /opt/puppetlabs/bin/puppet config set server ${puppetmaster_host_name} --section=main
 /opt/puppetlabs/bin/puppet agent --test
 /opt/puppetlabs/bin/puppetdb ssl-setup
+/opt/puppetlabs/bin/puppet module install camptocamp-systemd
 /opt/puppetlabs/bin/puppet module install puppetlabs-puppetdb
 
 
